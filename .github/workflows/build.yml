@@ -21,4 +21,4 @@ jobs:
           cd proj
           gradle assembleDebug 
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "build-${{ github.run_number }}" proj/app/build/outputs/apk/debug/app-debug.apk --title "Клавиатура"
+      - run: gh release create "build-${{ github.run_number }}" proj/app/build/outputs/apk/debug/app-debug.apk --title "Клавиатура"
